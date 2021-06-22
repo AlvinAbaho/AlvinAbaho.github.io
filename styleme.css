@@ -1,0 +1,87 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-image: url(math-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body {
+    /*background: #654ea3;*/
+    /*background: linear-gradient(to right, #e96443, #904e95);*/
+    min-height: 100vh;
+    overflow-x: hidden
+}
+
+.no-bullets {
+    list-style-type: none; /* Remove bullets */
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+}
+
+.custom-link, .custom-link:link {
+    color: #744abb;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #f3b609;
+    text-decoration: underline;
+}
+
+.custom-text {
+    color: #dc3e7e;
+    font-weight: bold;
+}
+
+.movie-text {
+    /*text-align: left;*/
+    font-family: Courier, sans-serif;
+}
+
+.custom-button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p:first-child:first-letter {
+    color: #903;
+    float: left;
+    font-family: Georgia, sans-serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.brief-description {
+    text-align: justify;
+}
+
+.quote {
+    color: #903;
+}
+
+dt {
+    color: #d58814;
+}
+
+dd {
+    text-indent: 3em;
+}
