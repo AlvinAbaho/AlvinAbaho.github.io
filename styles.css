@@ -14,3 +14,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden
 }
+
+.no-bullets {
+    list-style-type: none; /* Remove bullets */
+}
