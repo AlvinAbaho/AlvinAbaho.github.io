@@ -51,8 +51,10 @@ body {
     text-align: center;
     padding: 25px;
 }
+.footer p {
+    margin-top: 1rem;
+}
 
-/* Media Queries*/
-@media only screen and (min-width: 100px) {
-
+nav .navbar-nav li a {
+    color: white !important;
 }

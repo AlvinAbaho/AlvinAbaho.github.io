@@ -65,6 +65,11 @@ body {
     height: 600px;
 }
 
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* Media Queries*/
 @media only screen and (min-width: 600px) {
     .content {
