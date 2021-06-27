@@ -1,5 +1,7 @@
-"use strict";
+/* jshint esversion: 6 */
+/* global ANIMATIONS */
 window.onload = function () {
+    "use strict";
     /* ------ Variables ------ */
     let animationIntervalId;
     const DEFAULT_ANIMATION_INTERVAL_MS = 250;
@@ -62,4 +64,4 @@ window.onload = function () {
         document.getElementById("animation").disabled = false;
         clearInterval(animationIntervalId);
     }
-}
+};
