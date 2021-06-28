@@ -1,0 +1,31 @@
+.bling-text-area {
+    font-weight: bold;
+    color: green;
+    text-decoration: underline;
+}
+
+.bling-body {
+    background-image: url("dollar.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    background: none;
+}
+
+.default-text {
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.custom-link, .custom-link:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #744abb;
+}
