@@ -18,7 +18,28 @@ $(function () {
                 "width": this.width + "px",
                 "height": this.height + "px"
             });
-            $('body').append(this.element);
+
+            $('body').append($("<div>", {class: "settings"}) // append settings
+                .append($('<div>', {class: 'setting'})
+                    .append($('<label>', {for: 'width', text: 'Width:'}))
+                    .append($('<input>', {type: 'number', id: 'width', name: 'width', value: 50}))
+                )
+                .append($('<div>', {class: 'setting'})
+                    .append($('<label>', {for: 'growth-amount', text: 'Growth amount (px):'}))
+                    .append($('<input>', {type: 'number', id: 'growth-amount', name: 'growth-amount', value: 2})
+                    ))
+                .append($('<div>', {class: 'setting'})
+                    .append($('<label>', {for: 'growth-interval', text: 'Growth Interval (ms):'}))
+                    .append($('<input>', {type: 'number', id: 'growth-interval', name: 'growth-interval', value: 250})
+                    ))
+                .append($('<div>', {class: 'setting'})
+                    .append($('<label>', {for: 'circle-number', text: 'Number of Circles:'}))
+                    .append($('<input>', {type: 'number', id: 'circle-number', name: 'circle-number', value: 10})
+                    ))
+                .append($('<button>', {class: 'button', id: 'start', text: 'Start'}))
+                .append($('<button>', {class: 'button', id: 'stop', disabled: true, text: 'Stop'}))
+                .append($('<button>', {class: 'button', id: 'reset', text: 'Reset'}))
+            ).append(this.element); // append canvas
         },
         circles: []
     };
