@@ -10,7 +10,7 @@ $(function () {
 
     // create a new canvas on to which the circles will be drawn
     const canvas = {
-        element: $("#canvas"),
+        element: $("<div>", {"id": "canvas"}),
         width: 1024,
         height: 800,
         initialize: function () {
