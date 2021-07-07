@@ -177,11 +177,11 @@ $(function () {
     });
 
     $("#growth-amount").change(function () {
-        GROWTH_AMOUNT = $(this).val();
+        GROWTH_AMOUNT = parseInt($(this).val());
     });
 
     $("#growth-interval").change(function () {
-        GROWTH_INTERVAL_MS = $(this).val();
+        GROWTH_INTERVAL_MS = parseInt($(this).val());
     });
 
     /**
