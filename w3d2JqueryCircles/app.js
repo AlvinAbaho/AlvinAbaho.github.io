@@ -1,6 +1,6 @@
 $(function () {
     "use strict";
-    let GROWTH_AMOUNT = 10;
+    let GROWTH_AMOUNT = 2;
     let CIRCLE_SIZE = 50;
     let GROWTH_INTERVAL_MS = 250;
     let NUMBER_OF_CIRCLES = 10;
