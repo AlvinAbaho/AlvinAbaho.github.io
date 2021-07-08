@@ -5,8 +5,7 @@ $(function () {
     let GROWTH_INTERVAL_MS = 250;
     let NUMBER_OF_CIRCLES = 10;
     let timeoutIds = [];
-    const COLOR_FACTORY = ["#91a5ef", "yellow",
-        "purple", "teal", "#89b893", "#af89b8", "#b8b389"];
+    const COLOR_FACTORY = ["#91a5ef", "yellow", "purple", "teal", "#89b893", "#af89b8", "#b8b389"];
 
     // create a new canvas on to which the circles will be drawn
     const canvas = {
@@ -231,7 +230,7 @@ $(function () {
 
     $("#circle-number").change(function () {
         // generate new circles based on user input
-        NUMBER_OF_CIRCLES = $(this).val();
+        NUMBER_OF_CIRCLES = parseInt($(this).val());
         createCircles(NUMBER_OF_CIRCLES);
     });
 
