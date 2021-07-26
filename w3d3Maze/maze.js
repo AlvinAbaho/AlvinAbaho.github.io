@@ -4,7 +4,7 @@ $(function () {
         const $walls = $("#maze .boundary");
         const $status = $('#status');
         const $maze = $('#maze');
-        $walls.removeClass('youlose'); // reset walls
+        $walls.removeClass('youlose youwin'); // reset walls
         $status.text("Maze has begun! Find your way through");
 
         $walls.mouseenter(function () {
@@ -21,6 +21,7 @@ $(function () {
                 $status.text("You lose :[");
             } else {
                 $status.text("You win :]");
+                $walls.addClass('youwin');
             }
             $walls.off('mouseenter');
             $maze.off('mouseleave');
